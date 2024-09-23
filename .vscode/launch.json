@@ -1,0 +1,19 @@
+{
+  "configurations": [
+    {
+      "type": "aws-sam",
+      "request": "direct-invoke",
+      "name": "PhotoToS3:index.handler (nodejs20.x)",
+      "invokeTarget": {
+        "target": "code",
+        "projectRoot": "${workspaceFolder}/PhotoToS3",
+        "lambdaHandler": "index.handler"
+      },
+      "lambda": {
+        "runtime": "nodejs20.x",
+        "payload": {},
+        "environmentVariables": {}
+      }
+    }
+  ]
+}
